@@ -1,0 +1,196 @@
+@import url("./global.css");
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-title-1);
+    color: var(--font-color-white);
+}
+
+p {
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-subtitle);
+    color: var(--font-color-gray-1);
+}
+
+nav a{
+    font-family: var(--font-family-alexandria);
+    text-decoration: none;
+    color: var(--font-color-gray-1);
+}
+
+input {
+    display: none;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-text-1);
+    padding: 20px 0px;
+}
+
+.container-icon {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--font-color-white);
+    gap: 11px;
+}
+
+/* CSS NAVEGAÇÃO - COMEÇO */
+
+.container-navegation {
+    display: flex;
+    gap: 40px;
+}
+
+.span-header {
+    color: var(--font-color-white);
+}
+
+/* CSS NAVEGAÇÃO - FIM */
+
+.container-user {
+    display: flex;
+    gap: 16px;
+}
+
+.span-register {
+    font-weight: bold;
+    background-color: var(--font-color-green);
+    padding: 8px 24px;
+    border-radius: 40px;
+    color: black;
+}
+
+/* MAIN CSS */
+
+.container-main {
+    display: flex;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.main-information {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    width: 730px; 
+    gap: 20px;
+}
+
+.section-pattern {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid var(--font-color-gradient);
+    border-radius: 24px;
+    width: fit-content;
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-text-2);
+    color: var(--font-color-green);
+    gap: 8px;
+}
+
+button {
+    padding: 15px 24px;
+    font-family: var(--font-family-alexandria);
+    border: 1.5px solid var(--font-color-white);
+    font-size: var(--font-size-text-2);
+    font-weight: bold;
+    border-radius: 40px;
+    background-color: var(--font-color-green);
+
+}
+
+.main-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CSS CARROSEL NAVEGATION */
+
+.main-carrosel {
+    height: 400px;
+    width: 620px;
+    border-radius: 20px;
+    position: absolute;
+    overflow: hidden;
+    transform: translate(116.5%, 0%);
+}
+
+.main-slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.main-slides img { /* Deixando todas as imagens padronizadas */
+    height: 100%;
+    width: 100%;
+    transition: .6s;
+}
+
+.slide {
+    width: 20%;
+}
+
+/* CONFIGURAÇÃO PARA MUDANÇA DE SLIDE */
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+/* CONFIGURAÇÃO PARA MUDANÇA DE SLIDE */
+
+/* CONFIGURANDO A LABEL PARA VIRAR BOTÃO */
+
+.navegation-button { /* Deixando a label na parte de baixo e no centro */
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.bar {
+    border-radius: 5px;
+    width: 70px;
+    height: 17px;
+    border: 1px solid var(--font-color-white);
+    margin: 6px; /* O gap */
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover { 
+    background-color: var(--font-color-green); 
+}
+
+/* CONFIGURANDO A LABEL PARA VIRAR BOTÃO */
+
+/* CSS CARROSEL NAVEGATION  */
